@@ -1,0 +1,30 @@
+
+			================================
+				Compare Files
+			================================
+
+
+====================================================================
+## This code is represented by a function named "comparison_file" ##
+
+- you could run the script by double clicking on it or by calling it from the CMD 
+after navigating to its directory
+
+- the script shows the result of comparison in a window on your screen
+if you want the result to be stored in a text file, you have simply to remove the 
+msgbox and add in the last for loop the next : objXXX.writeline strNotCurrent
+
+NB : before the for loop, you have to create the file first
+
+Set objFSO = CreateObject("Scripting.FileSystemObject")
+Set objXXX = objFSO.CreateTextFile("C:\your_path\xxx.txt",TRUE)
+
+- when you run the script, an input box will pop up to ask you for the name of the files 
+
+if your files are stored in the same directory as the script, you could only provide their 
+names followed by thier nature (.txt, .c, etc.) like hello_world.txt
+if not, you provide the full path of each file like C:\your_path\xxx.txt
+
+- the files provided represent a song by dream theatre
+file1 contain the right song lyrics
+
